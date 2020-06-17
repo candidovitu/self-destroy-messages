@@ -1,0 +1,24 @@
+<div class="form-container">
+
+    <h3 class="title">Registrar</h3>
+
+    <form id="createDocument" onsubmit="
+    
+    post('/create', {
+        content: document.getElementById('createDocument').querySelector('#content').value
+    });
+    
+    ">
+        <div class="input-container">
+            <span class="input-text">Mensagem</span>
+            <textarea id="content" cols="120" rows="20"></textarea>
+        </div>
+
+        <div class="result">
+            <span class="url">http://0.0.0.0/0000-0000-0000-0000</span>
+        </div>
+
+        <button class="submit">Registrar</button>
+    </form>
+    
+</div>
